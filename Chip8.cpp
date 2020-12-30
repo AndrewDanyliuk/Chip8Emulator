@@ -513,7 +513,7 @@ void Chip8::OP_FX1E()
 {
     uint8_t Vx = (0x0F00U & opcode) >> 8U;
 
-    indexRegister += registers[Vx]
+    indexRegister += registers[Vx];
 }
 
 void Chip8::OP_FX29()
